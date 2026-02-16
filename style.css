@@ -11,9 +11,6 @@ body{
 }
 
 .welcome{
-    background-image: url(img/001o.jpg);
-    background-size: cover;
-    background-position: top;
     height: 100vh;
     font-size: 30px;
     text-align: center;
@@ -82,10 +79,6 @@ body{
 }
 
 /* main html starts here */
-
-body{
-    background-image: url(img/luxury.jfif);
-}
 
 nav{
     display: flex;
@@ -253,10 +246,14 @@ aside .aside-img2{
     padding: 10px 50px;
 }
 
+.about .stress{
+    display: flex;
+}
+
 .about h2 {
     font-size: 40px;
     color: #004e89;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     font-weight: 600;
     text-align: center;
     font-family: "Pacifico", cursive;
@@ -272,10 +269,7 @@ aside .aside-img2{
 .about-text1 .p{
     padding-top: 20px;
 }
-.about-card{
-    display: flex;
-    justify-content: space-between;
-}
+
 
 .about-image img{
     width: 500px;
@@ -283,35 +277,36 @@ aside .aside-img2{
     border-radius: 20px;
 }
 
-.about .why-choose {
+.why-choose {
     margin-top: 60px;
+    margin-left: 100px;
+    margin-right: 100px;
 }
-
-.about .why-choose h3 {
+.why-choose h3 {
     text-align: center;
     font-size: 30px;
     color: #004e89;
     margin-bottom: 40px;
 }
 
-.about .choose-box h4, p{
+.choose-box h4, p{
     text-align: center;
 }
 
-.about .choose-box h4 {
+.choose-box h4 {
     font-size: 30px;
     color: #00bfff;
     margin-bottom: 15px;
 }
 
-.about .choose-grid {
+.choose-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 30px;
     margin-bottom: 50px;
 }
 
-.about .choose-box {
+.choose-box {
     background-color: whitesmoke;
     padding: 20px 20px;
     border-radius: 10px;
@@ -319,40 +314,41 @@ aside .aside-img2{
     transition: all 0.3s ease-in-out;
 }
 
-.about .choose-box:hover {
-    transform: translatex(-5px);
+.choose-box:hover {
     box-shadow: 0 8px 20px rgba(0, 191, 255, 0.3);
     border-color: #00bfff;
 }
 
-.about .choose-box p {
+.choose-box p {
     font-size: 20px;
     color: #555555;
     line-height: 1.6;
 }
 
 
-.about .experience{
+.experience{
     display: flex;
     justify-content: space-around;
     gap: 30px;
     background: linear-gradient(#00bfff, gold);
     padding: 40px 20px;
     border-radius: 10px;
+    margin-left: 100px;
+    margin-right: 100px;
 }
 
-.about .ex-item {
+.ex-item {
     text-align: center;
     color: white;
 }
 
-.about .ex-item h3 {
+.ex-item h3 {
     font-size: 50px;
     font-weight: 700;
     margin-bottom: 10px;
 }
 
-.about .ex-item p {
+.ex-item p {
     font-size: 20px;
     font-weight: 500;
 }
@@ -642,6 +638,10 @@ figcaption .review-grid{
         padding-bottom: 0;
     }
 
+    .stress{
+        flex-direction: column;
+    }
+
     .about-text h2{
         width: 100%;
         font-size: 25px;
@@ -661,11 +661,12 @@ figcaption .review-grid{
     }
 
     .about-image img{
-        width: 350px;
-        height: 350px;
+        border-radius: 0;
+        width: 200px;
+        height: 250px;
     }
 
-    .about .choose-grid{
+    .choose-grid{
         grid-template-columns: 1fr;
     }
 
@@ -685,6 +686,7 @@ figcaption .review-grid{
     
     .destination-grid{
         grid-template-columns: 1fr;
+        margin: 10px 30px;
         gap: 25px;
     }
     
