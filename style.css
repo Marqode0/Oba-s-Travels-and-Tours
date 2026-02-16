@@ -17,7 +17,10 @@ body{
     padding-top: 30px;
     justify-content: center;
     align-items: center;
-    
+    background-image: url(img/planeport.avif);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .welcome h2{
